@@ -59,7 +59,6 @@
 
 <ul>
 <li><a href="{{.Prefix}}/"><code>{{.Prefix}}/</code></a> This page.</li>
-<li><a href="{{.Prefix}}/absolute-redirect/6"><code>{{.Prefix}}/absolute-redirect/:n</code></a> 302 Absolute redirects <em>n</em> times.</li>
 <li><a href="{{.Prefix}}/anything"><code>{{.Prefix}}/anything/:anything</code></a> Returns anything that is passed to request.</li>
 <li><a href="{{.Prefix}}/base64/aHR0cGJpbmdvLm9yZw=="><code>{{.Prefix}}/base64/:value</code></a> Decodes a Base64-encoded string.</li>
 <li><a href="{{.Prefix}}/base64/decode/aHR0cGJpbmdvLm9yZw=="><code>{{.Prefix}}/base64/decode/:value</code></a> Explicit URL for decoding a Base64 encoded string.</li>
@@ -103,10 +102,6 @@
 <li><code>{{.Prefix}}/post</code> Returns request data.  Allows only <code>POST</code> requests.</li>
 <li><code>{{.Prefix}}/put</code> Returns request data.  Allows only <code>PUT</code> requests.</li>
 <li><a href="{{.Prefix}}/range/1024"><code>{{.Prefix}}/range/1024?duration=s&amp;chunk_size=code</code></a> Streams <em>n</em> bytes, and allows specifying a <em>Range</em> header to select a subset of the data. Accepts a <em>chunk_size</em> and request <em>duration</em> parameter.</li>
-<li><a href="{{.Prefix}}/redirect-to?status_code=307&amp;url=http%3A%2F%2Fexample.com%2F"><code>{{.Prefix}}/redirect-to?url=foo&status_code=307</code></a> 307 Redirects to the <em>foo</em> URL.</li>
-<li><a href="{{.Prefix}}/redirect-to?url=http%3A%2F%2Fexample.com%2F"><code>{{.Prefix}}/redirect-to?url=foo</code></a> 302 Redirects to the <em>foo</em> URL.</li>
-<li><a href="{{.Prefix}}/redirect/6"><code>{{.Prefix}}/redirect/:n</code></a> 302 Redirects <em>n</em> times.</li>
-<li><a href="{{.Prefix}}/relative-redirect/6"><code>{{.Prefix}}/relative-redirect/:n</code></a> 302 Relative redirects <em>n</em> times.</li>
 <li><a href="{{.Prefix}}/response-headers?Server=httpbin&amp;Content-Type=text%2Fplain%3B+charset%3DUTF-8"><code>{{.Prefix}}/response-headers?key=val</code></a> Returns given response headers.</li>
 <li><a href="{{.Prefix}}/robots.txt"><code>{{.Prefix}}/robots.txt</code></a> Returns some robots.txt rules.</li>
 <li><a href="{{.Prefix}}/sse?delay=1s&amp;duration=5s&count=10"><code>{{.Prefix}}/sse?delay=1s&amp;duration=5s&count=10</code></a> a stream of server-sent events.</li>
